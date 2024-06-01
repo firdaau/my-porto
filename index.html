@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <!-- Link ke CSS Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #007bff;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+            background-color: whitesmoke;
+        }
+        .section {
+            margin-bottom: 2rem;
+
+        }
+        .section h3 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+        }
+        .section p {
+            text-align: justify;
+        }   
+        .skill, .job, .project {
+            flex: 1;
+            margin: 1rem;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            background: none;
+        }
+	.progress {
+    	    height: 20px; /* Menambahkan tinggi pada progress */
+            margin-bottom: 0.1rem; /* Tambahkan margin bawah untuk ruang ekstra */
+	}
+
+	.progress-bar {
+            height: 20px; /* Ukuran progress bar lebih besar */
+            line-height: 40px; /* Vertikal center text */
+            font-size: 1rem; /* Ukuran teks lebih besar */
+            
+        }
+        .profile-info {
+            margin-bottom: 1rem;
+
+        }
+
+        .profile-info img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-info span {
+            font-weight: bold;
+            margin: 0;
+        }
+        .social-links a {
+            margin-right: 1rem;
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #0056b3; /* Ubah warna saat hover */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portofolio Saya</h1>
+</header>
+
+<div class="container">
+    <div class="container">
+    <section class="section">
+        <h3>Profil</h3>
+        <div class="profile-info">
+            
+            <p><span>Nama:</span> Firda Aulia</p>
+            <p><span>Alamat:</span> Taktakan,Kota serang,Banten,Indonesia</p>
+            <p><span>Nomor Telepon:</span> 083873638884</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/johndoe">Facebook</a>
+            <a href="https://twitter.com/johndoe">Twitter</a>
+            <a href="https://www.instagram.com/johndoe">Instagram</a>
+            <!-- Tambahkan tautan media sosial lainnya di sini -->
+        </div>
+    </section>
+
+    <section class="section">
+        <h3>Tentang Saya</h3>
+        <p>Hallo Perkenalkan nama saya Firda Aulia Biasa dipanggil pirda atau Nda, mempunyai 3 Bersaudara 1 laki-laki 2 Peremupuan, Saya seorang siswa yang berusia 17th,duduk di bangku sma kelas 11 SMA yang memiliki sifat keras kepala dan gampang emosi, tipe orang yang susah berbaur sama orang orang baru, gampang kepikiran dengan hal-hal kecil, Suka gaenakan sama orang, Suka nonton film/drakor, dengerin musik,Suka bersih-bersih kalo ga mager Udahlah segitu aja pak kedepanya saya ingin menjadi pribadi yang lebih baik.</p>
+    </section>
+
+    <section class="section experience">
+        <h3>Riwayat Pendidikan</h3>
+        <div class="job">
+            <h5>SDN Taktakan 2      (2013-2018)</h5>
+            <h5>SMPN 21 Kota serang (2019-2021)</h5>
+            <h5>SMAN 3 Kota serang  (2022-Sampai sekarang)</h5>
+            <h5>Fakultas Kedokteran UGM</h5>            
+        </div>
+    </section>
+
+    <section class="section">
+        <h3>Keterampilan</h3>
+        <div class="skill">
+            <h5>Microsoft PowerPoint</h5>
+            <!--<p>Deskripsi keterampilan 1</p>-->
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <h5>Microsoft Excel</h5>
+            <!--<p>Deskripsi keterampilan 2</p>-->
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <h5>Microsoft Word</h5>
+            <!--<p>Deskripsi keterampilan 3</p>-->
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section experience">
+        <h3>Prestasi</h3>
+        <div class="job">
+            <p>Lomba Tari tingkat SD </p>
+            <p>Sekertaris kelas SMP</p>
+        </div>
+    </section>
+</div>
+</div>
+<!-- Link ke JavaScript Bootstrap dan dependensinya -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
