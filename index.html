@@ -55,12 +55,23 @@
         }
         .profile-info {
             margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
 
         }
 
+.profile-info .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info .info > div {
+    margin-bottom: 15px; /* Tambahkan jarak antara setiap informasi */
+}
+
         .profile-info img {
             max-width: 200px;
-            border-radius: 50%;
+            border-radius: 0%;
             margin-right: 20px;
         }
         .profile-info span {
@@ -81,7 +92,7 @@
 <body>
 
 <header>
-    <h1>Portofolio Saya</h1>
+    <h1>My Portofolio</h1>
 </header>
 
 <div class="container">
@@ -89,17 +100,25 @@
     <section class="section">
         <h3>Profil</h3>
         <div class="profile-info">
+<img src="firda.jpeg" alt="Foto Profil">
             
-            <p><span>Nama:</span> Firda Aulia</p>
-            <p><span>Alamat:</span> Taktakan,Kota serang,Banten,Indonesia</p>
-            <p><span>Nomor Telepon:</span> 083873638884</p>
-        </div>
+            <div class="info">
+        <div class="name"><span>Nama:</span> Firda Aulia</div>
+        <div class="address"><span>Alamat:</span> Taktakan,Kota serang,Banten,Indonesia</div>
+        <div class="phone"><span>Nomor Telepon:</span> 083873638884</div>
+    
         <div class="social-links">
-            <a href="https://www.facebook.com/johndoe">Facebook</a>
-            <a href="https://twitter.com/johndoe">Twitter</a>
-            <a href="https://www.instagram.com/johndoe">Instagram</a>
+            <a href="https://x.com/FirdaAu25115765?t=70m-9IyQ-HqZwyFUgJ0LwA&s=08">
+        <img src="https://img.icons8.com/?size=100&id=5MQ0gPAYYx7a&format=png&color=000000" style="width: 40px; height: 40px;">
+    </a>
+
+            <a href="https://www.instagram.com/firdaaulia007">
+        <img src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" style="width: 40px; height: 40px;">
+    </a>
+           
             <!-- Tambahkan tautan media sosial lainnya di sini -->
         </div>
+</div>
     </section>
 
     <section class="section">
